@@ -363,7 +363,7 @@ func (p *parser) parseAttributeSelector() (attrSelector, error) {
 	if err != nil {
 		return attrSelector{}, err
 	}
-	key = toLowerASCII(key)
+	// key = toLowerASCII(key)
 
 	p.skipWhitespace()
 	if p.i >= len(p.s) {
